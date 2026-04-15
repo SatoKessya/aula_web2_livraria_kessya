@@ -1,0 +1,88 @@
+{
+  "version": "2",
+  "dialect": "mssql",
+  "id": "7da38e8c-f23f-45b9-ab20-e182268a1af4",
+  "prevIds": [
+    "00000000-0000-0000-0000-000000000000"
+  ],
+  "ddl": [
+    {
+      "name": "autores",
+      "entityType": "tables",
+      "schema": "dbo"
+    },
+    {
+      "type": "int",
+      "notNull": true,
+      "generated": null,
+      "identity": {
+        "seed": 1,
+        "increment": 1
+      },
+      "name": "id",
+      "schema": "dbo",
+      "entityType": "columns",
+      "table": "autores"
+    },
+    {
+      "type": "varchar(100)",
+      "notNull": true,
+      "generated": null,
+      "identity": null,
+      "name": "nome",
+      "schema": "dbo",
+      "entityType": "columns",
+      "table": "autores"
+    },
+    {
+      "type": "varchar(255)",
+      "notNull": true,
+      "generated": null,
+      "identity": null,
+      "name": "email",
+      "schema": "dbo",
+      "entityType": "columns",
+      "table": "autores"
+    },
+    {
+      "type": "datetime",
+      "notNull": true,
+      "generated": null,
+      "identity": null,
+      "name": "criado_em",
+      "schema": "dbo",
+      "entityType": "columns",
+      "table": "autores"
+    },
+    {
+      "nameExplicit": false,
+      "columns": [
+        "id"
+      ],
+      "name": "autores_pkey",
+      "table": "autores",
+      "schema": "dbo",
+      "entityType": "pks"
+    },
+    {
+      "nameExplicit": false,
+      "columns": [
+        "email"
+      ],
+      "name": "autores_email_key",
+      "schema": "dbo",
+      "table": "autores",
+      "entityType": "uniques"
+    },
+    {
+      "column": "criado_em",
+      "nameExplicit": false,
+      "default": "(getdate())",
+      "name": "autores_criado_em_default",
+      "entityType": "defaults",
+      "schema": "dbo",
+      "table": "autores"
+    }
+  ],
+  "renames": []
+}
