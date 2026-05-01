@@ -1,0 +1,1 @@
+ALTER TABLE [autores] ADD [ativo] bit NOT NULL CONSTRAINT [autores_ativo_default] DEFAULT ((1));
